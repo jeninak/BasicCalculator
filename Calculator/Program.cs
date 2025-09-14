@@ -31,11 +31,15 @@
                     break;
                 default:
                     Console.WriteLine("Invalid operator");
+                    Console.ReadKey(); // Keeps console open until prompted to exit
                     return;
             }
 
             Console.WriteLine($"Result: {num1} {operation} {num2} = {result}");
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
+
 
